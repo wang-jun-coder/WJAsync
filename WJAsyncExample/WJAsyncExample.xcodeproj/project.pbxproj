@@ -15,7 +15,9 @@
 		2B43C6ED20C40D82009A6A07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B43C6EC20C40D82009A6A07 /* main.m */; };
 		2B43C6F720C40D82009A6A07 /* WJAsyncExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B43C6F620C40D82009A6A07 /* WJAsyncExampleTests.m */; };
 		2B43C70220C40D83009A6A07 /* WJAsyncExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B43C70120C40D83009A6A07 /* WJAsyncExampleUITests.m */; };
-		2B43C71520C40FBB009A6A07 /* WJAsync.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B43C71320C40FBB009A6A07 /* WJAsync.m */; };
+		3B2C868D377623DEEBC59B83 /* libPods-WJAsyncExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6366BB43548A9FC9A214F2E /* libPods-WJAsyncExampleTests.a */; };
+		881D542532BB592D9C6EEEFD /* libPods-WJAsyncExampleUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 805B86031610F24BD31083AA /* libPods-WJAsyncExampleUITests.a */; };
+		8AE428B629367BE8E3704BD9 /* libPods-WJAsyncExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F92A5DC9FC94AD4164CBA8F /* libPods-WJAsyncExample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F642BBC61C9A7C817374520 /* Pods-WJAsyncExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJAsyncExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WJAsyncExampleTests/Pods-WJAsyncExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		23BD004B7684494503077156 /* Pods-WJAsyncExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJAsyncExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WJAsyncExampleTests/Pods-WJAsyncExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2B43C6DA20C40D80009A6A07 /* WJAsyncExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WJAsyncExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B43C6DD20C40D80009A6A07 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2B43C6DE20C40D80009A6A07 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,8 +56,13 @@
 		2B43C6FD20C40D82009A6A07 /* WJAsyncExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WJAsyncExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B43C70120C40D83009A6A07 /* WJAsyncExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJAsyncExampleUITests.m; sourceTree = "<group>"; };
 		2B43C70320C40D83009A6A07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B43C71320C40FBB009A6A07 /* WJAsync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJAsync.m; sourceTree = "<group>"; };
-		2B43C71420C40FBB009A6A07 /* WJAsync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJAsync.h; sourceTree = "<group>"; };
+		53E0995115D879CDEBBD18D9 /* Pods-WJAsyncExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJAsyncExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WJAsyncExample/Pods-WJAsyncExample.debug.xcconfig"; sourceTree = "<group>"; };
+		805B86031610F24BD31083AA /* libPods-WJAsyncExampleUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WJAsyncExampleUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80CD02ABDC5D21D83A1CB52B /* Pods-WJAsyncExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJAsyncExampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WJAsyncExampleUITests/Pods-WJAsyncExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C32A9C43A24D5B2B20EBF99 /* Pods-WJAsyncExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJAsyncExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-WJAsyncExample/Pods-WJAsyncExample.release.xcconfig"; sourceTree = "<group>"; };
+		9F92A5DC9FC94AD4164CBA8F /* libPods-WJAsyncExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WJAsyncExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1CD7687A2E71A9F72F872F4 /* Pods-WJAsyncExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJAsyncExampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WJAsyncExampleUITests/Pods-WJAsyncExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F6366BB43548A9FC9A214F2E /* libPods-WJAsyncExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WJAsyncExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AE428B629367BE8E3704BD9 /* libPods-WJAsyncExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B2C868D377623DEEBC59B83 /* libPods-WJAsyncExampleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				881D542532BB592D9C6EEEFD /* libPods-WJAsyncExampleUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,11 +96,12 @@
 		2B43C6D120C40D80009A6A07 = {
 			isa = PBXGroup;
 			children = (
-				2B43C70F20C40E33009A6A07 /* WJAsync */,
 				2B43C6DC20C40D80009A6A07 /* WJAsyncExample */,
 				2B43C6F520C40D82009A6A07 /* WJAsyncExampleTests */,
 				2B43C70020C40D82009A6A07 /* WJAsyncExampleUITests */,
 				2B43C6DB20C40D80009A6A07 /* Products */,
+				EC387D9B29F0FB6B1744B6E8 /* Pods */,
+				FC26666003A5DCDD1D4EB01F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,13 +149,27 @@
 			path = WJAsyncExampleUITests;
 			sourceTree = "<group>";
 		};
-		2B43C70F20C40E33009A6A07 /* WJAsync */ = {
+		EC387D9B29F0FB6B1744B6E8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2B43C71420C40FBB009A6A07 /* WJAsync.h */,
-				2B43C71320C40FBB009A6A07 /* WJAsync.m */,
+				53E0995115D879CDEBBD18D9 /* Pods-WJAsyncExample.debug.xcconfig */,
+				8C32A9C43A24D5B2B20EBF99 /* Pods-WJAsyncExample.release.xcconfig */,
+				23BD004B7684494503077156 /* Pods-WJAsyncExampleTests.debug.xcconfig */,
+				0F642BBC61C9A7C817374520 /* Pods-WJAsyncExampleTests.release.xcconfig */,
+				80CD02ABDC5D21D83A1CB52B /* Pods-WJAsyncExampleUITests.debug.xcconfig */,
+				A1CD7687A2E71A9F72F872F4 /* Pods-WJAsyncExampleUITests.release.xcconfig */,
 			);
-			path = WJAsync;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC26666003A5DCDD1D4EB01F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F92A5DC9FC94AD4164CBA8F /* libPods-WJAsyncExample.a */,
+				F6366BB43548A9FC9A214F2E /* libPods-WJAsyncExampleTests.a */,
+				805B86031610F24BD31083AA /* libPods-WJAsyncExampleUITests.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +179,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B43C70620C40D83009A6A07 /* Build configuration list for PBXNativeTarget "WJAsyncExample" */;
 			buildPhases = (
+				5C8CD500E6066ABA38E3C5EB /* [CP] Check Pods Manifest.lock */,
 				2B43C6D620C40D80009A6A07 /* Sources */,
 				2B43C6D720C40D80009A6A07 /* Frameworks */,
 				2B43C6D820C40D80009A6A07 /* Resources */,
@@ -169,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B43C70920C40D83009A6A07 /* Build configuration list for PBXNativeTarget "WJAsyncExampleTests" */;
 			buildPhases = (
+				67A0792DA685998CD5594827 /* [CP] Check Pods Manifest.lock */,
 				2B43C6EE20C40D82009A6A07 /* Sources */,
 				2B43C6EF20C40D82009A6A07 /* Frameworks */,
 				2B43C6F020C40D82009A6A07 /* Resources */,
@@ -187,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B43C70C20C40D83009A6A07 /* Build configuration list for PBXNativeTarget "WJAsyncExampleUITests" */;
 			buildPhases = (
+				66C12C244471C3DA3249857B /* [CP] Check Pods Manifest.lock */,
 				2B43C6F920C40D82009A6A07 /* Sources */,
 				2B43C6FA20C40D82009A6A07 /* Frameworks */,
 				2B43C6FB20C40D82009A6A07 /* Resources */,
@@ -270,6 +300,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5C8CD500E6066ABA38E3C5EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WJAsyncExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66C12C244471C3DA3249857B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WJAsyncExampleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67A0792DA685998CD5594827 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WJAsyncExampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2B43C6D620C40D80009A6A07 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -278,7 +365,6 @@
 				2B43C6E220C40D80009A6A07 /* ViewController.m in Sources */,
 				2B43C6ED20C40D82009A6A07 /* main.m in Sources */,
 				2B43C6DF20C40D80009A6A07 /* AppDelegate.m in Sources */,
-				2B43C71520C40FBB009A6A07 /* WJAsync.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +531,7 @@
 		};
 		2B43C70720C40D83009A6A07 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53E0995115D879CDEBBD18D9 /* Pods-WJAsyncExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -462,6 +549,7 @@
 		};
 		2B43C70820C40D83009A6A07 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C32A9C43A24D5B2B20EBF99 /* Pods-WJAsyncExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -479,6 +567,7 @@
 		};
 		2B43C70A20C40D83009A6A07 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23BD004B7684494503077156 /* Pods-WJAsyncExampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -498,6 +587,7 @@
 		};
 		2B43C70B20C40D83009A6A07 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F642BBC61C9A7C817374520 /* Pods-WJAsyncExampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -517,6 +607,7 @@
 		};
 		2B43C70D20C40D83009A6A07 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80CD02ABDC5D21D83A1CB52B /* Pods-WJAsyncExampleUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7465LVKW35;
@@ -535,6 +626,7 @@
 		};
 		2B43C70E20C40D83009A6A07 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1CD7687A2E71A9F72F872F4 /* Pods-WJAsyncExampleUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7465LVKW35;

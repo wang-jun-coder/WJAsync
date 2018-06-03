@@ -1,0 +1,16 @@
+PODS:
+  - WJAsync (0.0.1)
+
+DEPENDENCIES:
+  - WJAsync (~> 0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - WJAsync
+
+SPEC CHECKSUMS:
+  WJAsync: bedb19c1546752808633035603b0c667dfbff34b
+
+PODFILE CHECKSUM: a52f0da5ec28f3a9054feb257ba85a25cb726683
+
+COCOAPODS: 1.5.3
