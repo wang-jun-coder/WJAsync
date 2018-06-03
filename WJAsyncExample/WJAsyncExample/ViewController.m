@@ -95,7 +95,7 @@
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             NSLog(@"异步任务 task1 执行完毕");
             NSError *err = nil;
-//            err = [NSError errorWithDomain:@"WJAsync.domain" code:-1 userInfo:@{}];
+            err = [NSError errorWithDomain:@"WJAsync.domain" code:-1 userInfo:@{}];
             NSMutableDictionary *dict = [NSMutableDictionary dictionary];
             [dict addEntriesFromDictionary:data];
             NSString *result = @"异步任务 task1 执行结果";
@@ -135,7 +135,7 @@
             NSLog(@"异步任务 task0 执行完毕");
             NSString *result = @"异步任务 task0 执行结果";
             NSError *err = nil;
-            //            err = [NSError errorWithDomain:@"WJAsync.domain" code:-1 userInfo:@{}];
+//            err = [NSError errorWithDomain:@"WJAsync.domain" code:-1 userInfo:@{}];
             return callback(err, result);
         });
     };
@@ -145,7 +145,7 @@
             NSLog(@"异步任务 task1 执行完毕");
             NSArray *result = @[@"异步任务 task1 执行结果"];
             NSError *err = nil;
-            //            err = [NSError errorWithDomain:@"WJAsync.domain" code:-1 userInfo:@{}];
+//            err = [NSError errorWithDomain:@"WJAsync.domain" code:-1 userInfo:@{}];
             return callback(err, result);
         });
     };
@@ -155,7 +155,7 @@
             NSLog(@"异步任务 task2 执行完毕");
             NSDictionary *result = @{@"task2" : @"异步任务 task1 执行结果"};
             NSError *err = nil;
-            //            err = [NSError errorWithDomain:@"WJAsync.domain" code:-1 userInfo:@{}];
+//            err = [NSError errorWithDomain:@"WJAsync.domain" code:-1 userInfo:@{}];
             return callback(err, result);
         });
     };

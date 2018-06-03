@@ -42,8 +42,8 @@
         for (NSInteger i=0; i<tasks.count; i++) {
             WJAsyncTask t = tasks[i];
             t(asyncCallback);
-            if (!continueRun) break;
             dispatch_semaphore_wait(sem, DISPATCH_TIME_FOREVER);
+            if (!continueRun) break;
         }
         if (complete && continueRun) {
             dispatch_async(dispatch_get_main_queue(), ^{
@@ -78,8 +78,8 @@
         for (NSInteger i=0; i<tasks.count; i++) {
             WJAsyncWaterfallTask t = tasks[i];
             t(waterfallData, asyncCallback);
-            if (!continueRun) break;
             dispatch_semaphore_wait(sem, DISPATCH_TIME_FOREVER);
+            if (!continueRun) break;
         }
         if (complete && continueRun) {
             dispatch_async(dispatch_get_main_queue(), ^{
@@ -105,6 +105,7 @@
             [errors addObject:[NSNull null]];
             WJAsyncTaskCallback asyncCallback = ^(NSError *err, id data) {
                 if(data)[results replaceObjectAtIndex:i withObject:data];
+                if(err)[errors replaceObjectAtIndex:i withObject:err];
                 dispatch_group_leave(group);
             };
             dispatch_group_enter(group);
@@ -112,7 +113,9 @@
         });
     }
     dispatch_group_notify(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        if(complete) complete(errors, results);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if(complete) complete(errors, results);
+        });
     });
 }
 @end
