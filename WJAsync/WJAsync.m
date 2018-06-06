@@ -23,7 +23,8 @@
  */
 + (void)series:(NSArray<WJAsyncTask> *)tasks complete:(WJAsyncSeriesComplete)complete {
     
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    dispatch_queue_t series_queue = dispatch_queue_create("wjasync.series", NULL);
+    dispatch_async(series_queue, ^{
         __block NSMutableArray *results = [NSMutableArray array];
         __block dispatch_semaphore_t sem = dispatch_semaphore_create(0);
         __block BOOL continueRun = true;
@@ -60,7 +61,8 @@
  @param complete 执行完毕回调函数
  */
 + (void)waterfall:(NSArray <WJAsyncWaterfallTask>*)tasks complete:(WJAsyncWaterfallComplete)complete {
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    dispatch_queue_t waterfall_queue = dispatch_queue_create("wjasync.waterfall", NULL);
+    dispatch_async(waterfall_queue, ^{
         __block dispatch_semaphore_t sem = dispatch_semaphore_create(0);
         __block id waterfallData = nil;
         __block BOOL continueRun = true;
