@@ -23,6 +23,8 @@
  */
 + (void)series:(NSArray<WJAsyncTask> *)tasks complete:(WJAsyncSeriesComplete)complete {
     
+    NSLog(@"121313131");
+    
     dispatch_queue_t series_queue = dispatch_queue_create("wjasync.series", NULL);
     dispatch_async(series_queue, ^{
         __block NSMutableArray *results = [NSMutableArray array];
